@@ -14,7 +14,7 @@ wt=pos.coords.longitude;
   
   function successl(pos) {
     var crds = pos.coords.speed;
-  document.getElementById("speed").innerHTML=crds;
+  document.getElementById("speed").innerHTML=Math.round(crds);
 if (crds == null){
   l0=lt;
   w0=wt;
@@ -25,7 +25,7 @@ if (crds == null){
   wd=(w0-wt)*111.133;
 
   speed=Math.sqrt(Math.pow(ld,2))*Math.pow(ld,2);
-  document.getElementById("speed").innerHTML=speed;
+  document.getElementById("speed").innerHTML=Math.round(speed);
 }
   }
 
