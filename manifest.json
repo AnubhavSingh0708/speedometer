@@ -4,6 +4,7 @@
     "short_name": "speedometer",
     "start_url": "./meter/index.html",
     "display": "fullscreen",
+    "orientation":"landscape-primary",
     "background_color": "#000",
     "description": "measure your speed using gps",
     "icons": [
