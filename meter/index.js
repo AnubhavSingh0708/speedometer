@@ -15,6 +15,8 @@ wt=pos.coords.longitude;
   function successl(pos) {
     var crds = pos.coords.speed;
   document.getElementById("speed").innerHTML=Math.round(crds);
+  document.getElementById("covers").style.transform = "rotate("+(Math.round(crds)+180.5)+"deg)"
+
 if (crds == null){
   l0=lt;
   w0=wt;
@@ -24,8 +26,9 @@ if (crds == null){
   ld=(l0-lt)*111.3194;
   wd=(w0-wt)*111.133;
 
-  speed=Math.sqrt(Math.pow(ld,2))*Math.pow(ld,2);
+  speed=(Math.sqrt(Math.pow(ld,2))*Math.pow(ld,2))/720;
   document.getElementById("speed").innerHTML=Math.round(speed);
+  document.getElementById("covers").style.transform = "rotate("+(Math.round(speed)+180.5)+"deg)"
 }
   }
 
