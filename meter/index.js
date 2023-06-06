@@ -5,7 +5,7 @@ const options = {
     timeout: 50000,
   };
   function success(pos) {
-   var crd = pos.coords.speed;
+   var crd = pos.coords.speed * 3.6;
     document.getElementById("speed").innerHTML=crd;
 lt=pos.coords.latitude;
 wt=pos.coords.longitude;
