@@ -41,6 +41,6 @@ if (crds == null){
   loop();
  function loop(){
   navigator.geolocation.getCurrentPosition(successl, error, options);
-  setTimeout(loop, 3000)
+  setTimeout(loop, 500)
   }
  //navigator.geolocation.watchPosition(successl, error, options);
